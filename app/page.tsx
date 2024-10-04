@@ -192,7 +192,7 @@ export default function Home() {
                     <button
                       className={`
                 
-                 bg-[#02282B] text-white mx-auto  p-2 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
+                 bg-[#02282B] text-white mx-auto  py-3 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
                     >
                       Get Started
                     </button>
@@ -204,7 +204,7 @@ export default function Home() {
             <button
               className={`
                 hidden md:block
-                 bg-[#02282B] text-white  p-2 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
+                 bg-[#02282B] text-white  p-2.5 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
             >
               Get Started
             </button>
@@ -399,7 +399,7 @@ export default function Home() {
           </p>
           <div className=" py-8 grid grid-cols-1 gap-8 2xl:gap-12 md:grid-cols-2 lg:grid-cols-3 w-full">
             {howItWorks.map((work, index) => (
-              <div key={index} className="   p-8 rounded-lg bg-[#C7F8ED]">
+              <div key={index} className="  z-50  p-8 rounded-lg bg-[#C7F8ED]">
                 <Image
                   src={work.image}
                   alt="pic"
