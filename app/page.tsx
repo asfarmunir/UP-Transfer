@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
-import { Ubuntu } from "next/font/google";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import "@/lib/i18n"; // Import the i18n setup file
 import { IoMenu } from "react-icons/io5";
 
 import {
@@ -12,14 +10,33 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+import translationEN from "@/locales/en/translation.json";
+import translationES from "@/locales/es/translation.json";
+
+// the translations
+const resources = {
+  en: {
+    translation: translationEN,
+  },
+  es: {
+    translation: translationES,
+  },
+};
+
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources,
+    lng: "en", // default language from localStorage
+    keySeparator: false, // we do not use keys in form messages.welcome
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+  });
 
 export default function Home() {
   const { i18n } = useTranslation();
@@ -200,7 +217,6 @@ export default function Home() {
       >
         <Image
           src="/hero-bg2.svg"
-          hero-bg1
           alt="pic"
           width={1000}
           height={1000}
@@ -208,7 +224,6 @@ export default function Home() {
         />
         <Image
           src="/hero-bg1.svg"
-          hero-bg1
           alt="pic"
           width={1000}
           height={1000}
@@ -352,7 +367,6 @@ export default function Home() {
       >
         <Image
           src="/bg_vector.svg"
-          hero-bg1
           alt="pic"
           width={1000}
           height={1000}
@@ -360,7 +374,6 @@ export default function Home() {
         />
         <Image
           src="/bg_vector2.svg"
-          hero-bg1
           alt="pic"
           width={1000}
           height={1000}
@@ -407,7 +420,6 @@ export default function Home() {
         <div className="flex items-center flex-col-reverse md:flex-row justify-center gap-8  w-full">
           <Image
             src="/feature1.svg"
-            hero-bg1
             alt="pic"
             width={550}
             height={550}
@@ -464,7 +476,6 @@ export default function Home() {
         <div className="flex items-center flex-col md:flex-row-reverse justify-center gap-8  w-full">
           <Image
             src="/feature2.svg"
-            hero-bg1
             alt="pic"
             width={550}
             height={550}
@@ -525,7 +536,6 @@ export default function Home() {
         <div className="flex items-center flex-col md:flex-row justify-center gap-12  w-full">
           <Image
             src="/feature3.svg"
-            hero-bg1
             alt="pic"
             width={550}
             height={550}
@@ -597,7 +607,6 @@ export default function Home() {
       >
         <Image
           src="/contact.svg"
-          hero-bg1
           alt="pic"
           width={550}
           height={550}
