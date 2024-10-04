@@ -18,8 +18,9 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "Evently",
-  description: "Events Management Application",
+  title: " UP Transfer",
+  description:
+    "UP Transfer is a platform that allows you to transfer files between devices without the need for an internet connection.",
   icons: {
     icon: "/assets/images/logo.svg",
   },
