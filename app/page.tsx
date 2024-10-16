@@ -50,36 +50,37 @@ export default function Home() {
   ];
   const howItWorks = [
     {
-      title: "Sign Up",
-      description: "Download the Up Tranfer app and create your account.",
+      title: i18n.t("signUpTitle"),
+      description: i18n.t("signUpDescription"),
       image: "/signup.svg",
     },
     {
-      title: "Verification",
-      description: "Verify your identity quickly to unlock full access.",
+      title: i18n.t("verificationTitle"),
+      description: i18n.t("verificationDescription"),
       image: "/verification2.svg",
     },
     {
-      title: "Deposit",
-      description: "Add funds securely to your account for transactions.",
+      title: i18n.t("depositTitle"),
+      description: i18n.t("depositDescription"),
       image: "/withdraw.svg",
     },
     {
-      title: "Withdraw",
-      description: "Easily withdraw your funds anytime with a few clicks.",
+      title: i18n.t("withdrawTitle"),
+      description: i18n.t("withdrawDescription"),
       image: "/withdraw.svg",
     },
     {
-      title: "Transfer",
-      description: "Send money to other users instantly and hassle-free",
+      title: i18n.t("transferTitle"),
+      description: i18n.t("transferDescription"),
       image: "/transfer.svg",
     },
     {
-      title: "Convert",
-      description: "Convert currencies seamlessly within the app in seconds.",
+      title: i18n.t("convertTitle"),
+      description: i18n.t("convertDescription"),
       image: "/convert.svg",
     },
   ];
+
   const scrollToSection = (section: string) => {
     const el = document.getElementById(section);
     console.log(section);
@@ -191,10 +192,16 @@ export default function Home() {
                     ))}
                     <button
                       className={`
+                 bg-[#02282B] text-white  p-2.5 px-4 2xl:py-3 2xl:px-6 rounded-full text-xs 2xl:text-sm  `}
+                    >
+                      {i18n.t("login")}
+                    </button>
+                    <button
+                      className={`
                 
                  bg-[#02282B] text-white mx-auto  py-3 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
                     >
-                      Get Started
+                      {i18n.t("register")}
                     </button>
                   </div>
                 </div>
@@ -204,9 +211,16 @@ export default function Home() {
             <button
               className={`
                 hidden md:block
+                 bg-[#02282B] text-white  p-2.5 px-3.5 2xl:py-3 2xl:px-4 rounded-full text-xs 2xl:text-sm  `}
+            >
+              {i18n.t("login")}
+            </button>
+            <button
+              className={`
+                hidden md:block
                  bg-[#02282B] text-white  p-2.5 px-3 2xl:py-3 2xl:px-3.5 rounded-full text-xs 2xl:text-sm  `}
             >
-              Get Started
+              {i18n.t("register")}
             </button>
           </div>
         </div>
@@ -248,11 +262,11 @@ export default function Home() {
               {i18n.t("heroDescription")}
             </p>
             <div className="flex items-center gap-6">
-              <button className=" py-4 font-semibold px-12 text-sm 2xl:text-base text-white rounded-full bg-[#02282B]">
+              <button className=" py-4 font-semibold px-6 md:px-12 text-sm 2xl:text-base text-white rounded-full bg-[#02282B]">
                 {i18n.t("join")}
               </button>
-              <button className=" py-3.5 font-bold px-12 text-sm 2xl:text-base  text-[#02282B] rounded-full border-[3px] border-[#02282B]">
-                Learn More
+              <button className=" py-3.5 font-bold px-6 md:px-12 text-sm 2xl:text-base  text-[#02282B] rounded-full border-[3px] border-[#02282B]">
+                {i18n.t("learnMore")}
               </button>
             </div>
           </div>
@@ -279,17 +293,16 @@ export default function Home() {
             height={25}
             className=" "
           />
-          <p className="font-bold">About Up Transfer</p>
+          <p className="font-bold">{i18n.t("aboutUp")}</p>
         </div>
-        <h2 className=" text-4xl font-bold">What Is Up Transfer?</h2>
+        <h2 className=" text-3xl md:text-4xl font-bold">
+          {i18n.t("whatIsUp")}
+        </h2>
         <p className=" max-w-2xl 2xl:max-w-3xl text-[#666666] font-semibold leading-snug text-center">
-          Our leading financial technology makes international and local
-          transfer simple and secure! Pay suppliers worldwide, send money to
-          your own abroad bank account and take advantage of multi fiat and
-          cryptocurrency accounts.{" "}
+          {i18n.t("whatText")}
         </p>
-        <div className=" py-8 grid grid-cols-1 gap-6 md:grid-cols-2 w-full">
-          <div className="border border-slate-200/70 rounded-2xl p-6  gap-6 flex items-center">
+        <div className="py-8 grid grid-cols-1 gap-6 md:grid-cols-2 w-full">
+          <div className="border border-slate-200/70 rounded-2xl p-6 gap-6 flex items-center">
             <Image
               src="/verification.svg"
               alt="pic"
@@ -297,17 +310,17 @@ export default function Home() {
               height={60}
               className=" "
             />
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <h2 className="text-xl font-bold mb-2">
-                Seamless Identity Verification
+                {i18n.t("identityVerificationTitle")}
               </h2>
-              <p className=" text-primary text-sm 2xl:text-base font-semibold">
-                Verify identities easily with advanced KYC, ensuring compliance
-                and reducing fraud.
+              <p className="text-primary text-sm 2xl:text-base font-semibold">
+                {i18n.t("identityVerificationDescription")}
               </p>
             </div>
           </div>
-          <div className="border border-slate-200/70 rounded-2xl p-6  gap-6 flex items-center">
+
+          <div className="border border-slate-200/70 rounded-2xl p-6 gap-6 flex items-center">
             <Image
               src="/secure.svg"
               alt="pic"
@@ -315,17 +328,17 @@ export default function Home() {
               height={60}
               className=" "
             />
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <h2 className="text-xl font-bold mb-2">
-                Secure Banking Transfers Solutions
+                {i18n.t("bankingTransfersTitle")}
               </h2>
-              <p className=" text-primary text-sm 2xl:text-base font-semibold">
-                Streamline global transactions with our banking integration and
-                multi-currency support.
+              <p className="text-primary text-sm 2xl:text-base font-semibold">
+                {i18n.t("bankingTransfersDescription")}
               </p>
             </div>
           </div>
-          <div className="border border-slate-200/70 rounded-2xl p-6  gap-6 flex items-center">
+
+          <div className="border border-slate-200/70 rounded-2xl p-6 gap-6 flex items-center">
             <Image
               src="/conversion.svg"
               alt="pic"
@@ -333,17 +346,17 @@ export default function Home() {
               height={60}
               className=" "
             />
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <h2 className="text-xl font-bold mb-2">
-                The Easiest Crypto-Fiat-Crypto Convertions{" "}
+                {i18n.t("cryptoConvertionsTitle")}
               </h2>
-              <p className=" text-primary text-sm 2xl:text-base font-semibold">
-                Crypto-Fiat-Crypto convertions in real time with low fee
-                commissions.
+              <p className="text-primary text-sm 2xl:text-base font-semibold">
+                {i18n.t("cryptoConvertionsDescription")}
               </p>
             </div>
           </div>
-          <div className="border border-slate-200/70 rounded-2xl p-6  gap-6 flex items-center">
+
+          <div className="border border-slate-200/70 rounded-2xl p-6 gap-6 flex items-center">
             <Image
               src="/compliance.svg"
               alt="pic"
@@ -351,11 +364,12 @@ export default function Home() {
               height={60}
               className=" "
             />
-            <div className="flex flex-col ">
-              <h2 className="text-xl font-bold mb-2">Compliance Made Easy </h2>
-              <p className=" text-primary text-sm 2xl:text-base font-semibold">
-                Simplify compliance with integrated KYC, KYT and KYB in one
-                platform.
+            <div className="flex flex-col">
+              <h2 className="text-xl font-bold mb-2">
+                {i18n.t("complianceTitle")}
+              </h2>
+              <p className="text-primary text-sm 2xl:text-base font-semibold">
+                {i18n.t("complianceDescription")}
               </p>
             </div>
           </div>
@@ -394,8 +408,7 @@ export default function Home() {
             </span>
           </h2>
           <p className=" max-w-lg  text-white font-thin leading-snug text-center">
-            Businesses generally promote their brand, products, and services by
-            identifying audience.
+            {i18n.t("bus")}
           </p>
           <div className=" py-8 grid grid-cols-1 gap-8 2xl:gap-12 md:grid-cols-2 lg:grid-cols-3 w-full">
             {howItWorks.map((work, index) => (
@@ -416,7 +429,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" w-full max-w-6xl 2xl:max-w-7xl px-5 md:px-0 flex flex-col items-center py-16 2xl:py-20 space-y-20 2xl:space-y-24 ">
+      {/* <div className=" w-full max-w-6xl 2xl:max-w-7xl px-5 md:px-0 flex flex-col items-center py-16 2xl:py-20 space-y-20 2xl:space-y-24 ">
         <div className="flex items-center flex-col-reverse md:flex-row justify-center gap-8  w-full">
           <Image
             src="/feature1.svg"
@@ -600,30 +613,213 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className=" w-full max-w-6xl 2xl:max-w-7xl px-5 md:px-0 flex flex-col items-center py-16 2xl:py-20 space-y-20 2xl:space-y-24 ">
+        <div className="flex items-center flex-col-reverse md:flex-row justify-center gap-8 w-full">
+          <Image
+            src="/feature1.svg"
+            alt="pic"
+            width={550}
+            height={550}
+            className=" "
+          />
+          <div className="space-y-2">
+            <Image
+              src="/highlight.svg"
+              alt="pic"
+              width={200}
+              height={200}
+              className=" "
+            />
+            <h2 className="text-3xl 2xl:text-4xl font-bold">
+              {i18n.t("robustIdentityVerificationTitle")}
+            </h2>
+            <p className="font-semibold text-primary pb-4">
+              {i18n.t("robustIdentityVerificationDescription")}
+            </p>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("advancedKYC")}</p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("realTimeChecks")}</p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("globalCompliance")}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center flex-col md:flex-row-reverse justify-center gap-8 w-full">
+          <Image
+            src="/feature2.svg"
+            alt="pic"
+            width={550}
+            height={550}
+            className=" "
+          />
+          <div className="space-y-2">
+            <Image
+              src="/highlight.svg"
+              alt="pic"
+              width={200}
+              height={200}
+              className=" "
+            />
+            <h2 className="text-3xl 2xl:text-4xl font-bold">
+              {i18n.t("comprehensiveFinancialOperationsTitle")}
+            </h2>
+            <p className="font-semibold text-primary pb-4">
+              {i18n.t("comprehensiveFinancialOperationsDescription")}
+            </p>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">
+                {i18n.t("multipleFiatCurrencies")}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">
+                {i18n.t("instantDepositsWithdrawals")}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">
+                {i18n.t("cryptoTradingManagement")}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center flex-col md:flex-row justify-center gap-12 w-full">
+          <Image
+            src="/feature3.svg"
+            alt="pic"
+            width={550}
+            height={550}
+            className=" "
+          />
+          <div className="space-y-2">
+            <Image
+              src="/highlight.svg"
+              alt="pic"
+              width={200}
+              height={200}
+              className=" "
+            />
+            <h2 className="text-3xl 2xl:text-4xl font-bold">
+              {i18n.t("seamlessTransfersTitle")}
+            </h2>
+            <p className="font-semibold text-primary pb-4">
+              {i18n.t("seamlessTransfersDescription")}
+            </p>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("secureBankTransfers")}</p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("multiFiatCrypto")}</p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("easyAppBankTransfers")}</p>
+            </div>
+            <div className="flex items-center gap-2 border border-gray-200 rounded-full p-2 w-fit">
+              <Image
+                src="/check.svg"
+                alt="pic"
+                width={27}
+                height={27}
+                className=" "
+              />
+              <p className=" text-primary">{i18n.t("lowFeeCommissions")}</p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div
         id="contact"
-        className=" w-full max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row items-center justify-evenly pb-12 md:py-16 px-5 md:px-0 gap-12 2xl:gap-20  "
+        className="w-full max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row items-center justify-evenly pb-12 md:py-16 px-5 md:px-0 gap-12 2xl:gap-20"
       >
         <Image
           src="/contact.svg"
           alt="pic"
           width={550}
           height={550}
-          className=" "
+          className=""
         />
-        <div className=" space-y-4 w-full max-w-lg">
-          <p className="text-primary-50 font-semibold">CONTACT US</p>
-          <h1 className="text-3xl 2xl:text-4xl font-semibold pb-4">
-            Let’s Collaborate
+        <div className="space-y-4 w-full max-w-lg">
+          <p className="text-primary-50 font-semibold">{i18n.t("contactUs")}</p>
+          <h1 className="text-3xl 2xl:text-4xl font-bold pb-4">
+            {i18n.t("collaborate")}
           </h1>
 
           <div className="space-y-2">
             <label htmlFor="name" className="2xl:text-lg font-semibold ">
-              Full Name
+              {i18n.t("fullName")}
             </label>
             <input
-              placeholder="Input Your Name"
+              placeholder={i18n.t("inputYourName")}
               type="text"
               id="name"
               className="w-full border border-[#9295994b] bg-[#F5F6F8] rounded-xl px-4 p-2 2xl:p-3 2xl:px-6"
@@ -631,30 +827,31 @@ export default function Home() {
           </div>
           <div className="space-y-2">
             <label htmlFor="email" className="2xl:text-lg font-semibold ">
-              Email
+              {i18n.t("email")}
             </label>
             <input
-              placeholder="Input Your Email"
+              placeholder={i18n.t("inputYourEmail")}
               type="email"
               id="email"
               className="w-full border border-[#9295994b] bg-[#F5F6F8] rounded-xl px-4 p-2 2xl:p-3 2xl:px-6"
             />
           </div>
           <div className="space-y-2">
-            <label htmlFor="name" className="2xl:text-lg font-semibold ">
-              Message
+            <label htmlFor="message" className="2xl:text-lg font-semibold ">
+              {i18n.t("message")}
             </label>
             <textarea
-              placeholder="Share your thoughts..."
-              id="name"
+              placeholder={i18n.t("shareYourThoughts")}
+              id="message"
               className="w-full h-32 border border-[#9295994b] bg-[#F5F6F8] rounded-xl px-4 p-2 2xl:p-3 2xl:px-6"
             />
           </div>
-          <button className=" bg-[#02282B] rounded-full p-4 px-10 text-sm text-white font-semibold">
-            Send Message
+          <button className="bg-[#02282B] rounded-full p-4 px-10 text-sm text-white font-semibold">
+            {i18n.t("sendMessage")}
           </button>
         </div>
       </div>
+
       <footer className=" bg-[#161010] pt-20 pb-8 px-6 md:px-32 w-full">
         <div className="flex items-start flex-col md:flex-row">
           <div className=" mr-12 2xl:mr-20 mb-5 md:mb-0">

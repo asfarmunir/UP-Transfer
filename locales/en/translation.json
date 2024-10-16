@@ -1,12 +1,87 @@
 {
-    "secure": "Secure",
+  "secure": "Secure",
   "hero": "and Connected: Your All-in-One Abroad Transfer Solution",
   "about": "About Us",
   "contact": "Contact Us",
   "personal": "Personal",
-    "business": "Business",
-    "join": "Join Now!",
-    "howItWorks": "How It",
-    "howItWork2": "works",
-    "heroDescription": "Unlock the potential of your transactions with secure regulatory checks and a comprehensive app. All with our multi-currency and cryptocurrency account to meet your personal and business needs."
+  "business": "Business",
+  "join": "Join Now!",
+  "howItWorks": "How It",
+  "howItWork2": "works",
+  "heroDescription": "Unlock the potential of your transactions with secure regulatory checks and a comprehensive app. All with our multi-currency and cryptocurrency account to meet your personal and business needs.",
+  "login": "Login",
+  "register": "Join Now!",
+  "learnMore": "How does it work?",
+  "aboutUp": "About Up Transfer",
+  "whatIsUp": "What Is Up Transfer?",
+  "whatText": "Our leading financial technology makes international and local transfer simple and secure! Pay suppliers worldwide, send money to your own abroad bank account and take advantage of multi fiat and cryptocurrency accounts.",
+  
+  "identityVerificationTitle": "Seamless Identity Verification",
+  "identityVerificationDescription": "Verify identities easily with advanced KYC, ensuring compliance and reducing fraud.",
+  
+  "bankingTransfersTitle": "Secure Banking Transfers Solutions",
+  "bankingTransfersDescription": "Streamline global transactions with our banking integration and multi-currency support.",
+  
+  "cryptoConvertionsTitle": "The Easiest Crypto-Fiat-Crypto Convertions",
+  "cryptoConvertionsDescription": "Crypto-Fiat-Crypto convertions in real time with low fee commissions.",
+  
+  "complianceTitle": "Compliance Made Easy",
+  "complianceDescription": "Simplify compliance with integrated KYC, KYT and KYB in one platform.",
+
+  "robustIdentityVerificationTitle": "Robust Identity Verification",
+  "robustIdentityVerificationDescription": "Get verified through a secure, multi-step verification process, ensuring complete compliance and security.",
+  
+  "advancedKYC": "Advanced KYC verification",
+  "realTimeChecks": "Real-time identity checks",
+  "globalCompliance": "Compliance with global standards",
+  
+  "comprehensiveFinancialOperationsTitle": "Comprehensive Financial Operations",
+  "comprehensiveFinancialOperationsDescription": "Manage your finances with ease—deposit, withdraw, transfer, and convert currencies, including cryptocurrencies, all within the app.",
+  
+  "multipleFiatCurrencies": "Support for multiple fiat currencies",
+  "instantDepositsWithdrawals": "Instant deposits and withdrawals",
+  "cryptoTradingManagement": "Cryptocurrency trading and management",
+  
+  "seamlessTransfersTitle": "Seamless Local and International Transfers",
+  "seamlessTransfersDescription": "Transfer to bank accounts effortlessly for streamlined financial operations and enhanced convenience.",
+  
+  "secureBankTransfers": "Secure bank transfers",
+  "multiFiatCrypto": "Multi fiat and cryptocurrency",
+  "easyAppBankTransfers": "Easy transfers between app and bank accounts",
+  "lowFeeCommissions": "Low fee commissions",
+  "contactUs": "CONTACT US",
+  "collaborate": "Let’s Collaborate",
+  "fullName": "Full Name",
+  "inputYourName": "Input Your Name",
+  "email": "Email",
+  "inputYourEmail": "Input Your Email",
+  "message": "Message",
+  "shareYourThoughts": "Share your thoughts...",
+  "sendMessage": "Send Message",
+  
+"signUpTitle": "Sign Up",
+  "signUpDescription": "Download the Up Transfer app and create your account.",
+  "verificationTitle": "Verification",
+  "verificationDescription": "Verify your identity quickly to unlock full access.",
+  "depositTitle": "Deposit",
+  "depositDescription": "Add funds securely to your account for transactions.",
+  "withdrawTitle": "Withdraw",
+  "withdrawDescription": "Easily withdraw your funds anytime with a few clicks.",
+  "transferTitle": "Transfer",
+  "transferDescription": "Send money to other users instantly and hassle-free.",
+  "convertTitle": "Convert",
+  "convertDescription": "Convert currencies seamlessly within the app in seconds.",
+  "bus":"Businesses generally promote their brand, products, and services by identifying audience."
+
+
+
+
+
+
+
+
+
+
+
+
 }

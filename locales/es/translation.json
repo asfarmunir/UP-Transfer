@@ -8,6 +8,73 @@
     "join": "Regístrate!",
     "howItWorks": "Como ",
     "howItWork2": " Funciona",
-    "heroDescription": "Libere el potencial  de sus transacciones con comprobaciones reglamentarias seguras y una aplicación integral. Todo con nuestra cuenta multidivisa y de criptomonedas para satisfacer sus necesidades personales y comerciales."
+    "heroDescription": "Libere el potencial  de sus transacciones con comprobaciones reglamentarias seguras y una aplicación integral. Todo con nuestra cuenta multidivisa y de criptomonedas para satisfacer sus necesidades personales y comerciales.",
+    "login": "Iniciar Sesión",
+    "register": "Regístrate!",
+    "learnMore": "Como funciona?",
+    "aboutUp":"Sobre Up Transfer",
+    "whatIsUp":"Que es Up Transfer?",
+    "whatText":"¡Nuestra tecnología financiera hace que las transferencias locales e internacionales sean simples y seguras! Pague a proveedores de todo el mundo, envíe dinero a su propia cuenta bancaria en el extranjero y aproveche las cuentas multidivisas y de criptomonedas.",
+
+  "identityVerificationTitle": "Verificación Sin Complicaciones",
+  "identityVerificationDescription": "Verifique identidades fácilmente con KYC avanzado, asegurando el cumplimiento y reduciendo el fraude.",
+  
+  "bankingTransfersTitle": "Soluciones Seguras de Transferencias Bancarias",
+  "bankingTransfersDescription": "Simplifique transacciones globales con nuestra integración bancaria y soporte de múltiples divisas.",
+  
+  "cryptoConvertionsTitle": "Conversiones Crypto-Fiat-Crypto  de forma fácil",
+  "cryptoConvertionsDescription": "Conversiones Cripto-Fiat-Cripto en tiempo real con comisiones bajas.",
+  
+  "complianceTitle": "Cumplimiento Regulatorio Simplificados",
+  "complianceDescription": "Simplifique el cumplimiento con KYC, KYT y KYB integrados en una sola plataforma.",
+
+
+  "robustIdentityVerificationTitle": "Robusta Verificación de Identidad ",
+  "robustIdentityVerificationDescription": "Verifíquese a través de un proceso de verificación seguro y en varios pasos, asegurando un cumplimiento y seguridad completos.",
+  
+   "advancedKYC": "Verificación KYC avanzada",
+  "realTimeChecks": "Verificaciones de identidad en tiempo real",
+  "globalCompliance": "Cumplimiento con estándares globales",
+  
+  "comprehensiveFinancialOperationsTitle": "Operaciones Financieras Integrales",
+  "comprehensiveFinancialOperationsDescription": "Administre sus finanzas con facilidad: deposite, retire, transfiera y convierta monedas, incluidas criptomonedas, todo dentro de la aplicación.",
+  
+  "multipleFiatCurrencies": "Soporte para múltiples monedas fiduciarias",
+  "instantDepositsWithdrawals": "Depósitos y retiros instantáneos",
+  "cryptoTradingManagement": "Comercio y gestión de criptomonedas",
+  
+  "seamlessTransfersTitle": "Transferencias locales e internacionales sin complicaciones",
+  "seamlessTransfersDescription": "Transfiera a cuentas bancarias sin esfuerzo para operaciones financieras optimizadas y mayor comodidad.",
+  
+  "secureBankTransfers": "Transferencias bancarias seguras",
+  "multiFiatCrypto": "Multi monedas fiduciarias y criptomonedas",
+  "easyAppBankTransfers": "Transferencias fáciles entre la aplicación y las cuentas bancarias",
+  "lowFeeCommissions": "Bajas comisiones",
+   "contactUs": "CONTÁCTENOS",
+  "collaborate": "Colaboremos",
+  "fullName": "Nombre completo",
+  "inputYourName": "Ingresa tu nombre",
+  "email": "Correo electrónico",
+  "inputYourEmail": "Ingresa tu correo electrónico",
+  "message": "Mensaje",
+  "shareYourThoughts": "Comparte tus pensamientos...",
+  "sendMessage": "Enviar mensaje",
+  
+  "signUpTitle": "Regístrate",
+  "signUpDescription": "Descarga la aplicación Up Transfer y crea tu cuenta.",
+  "verificationTitle": "Verificación",
+  "verificationDescription": "Verifica tu identidad rápidamente para desbloquear el acceso completo.",
+  "depositTitle": "Depósito",
+  "depositDescription": "Agrega fondos de manera segura a tu cuenta para transacciones.",
+  "withdrawTitle": "Retirar",
+  "withdrawDescription": "Retira fácilmente tus fondos en cualquier momento con unos pocos clics.",
+  "transferTitle": "Transferir",
+  "transferDescription": "Envía dinero a otros usuarios de forma instantánea y sin complicaciones.",
+  "convertTitle": "Convertir",
+  "convertDescription": "Convierte divisas sin problemas dentro de la aplicación en segundos.",
+  "bus":"Up Transfer, tu cuenta sin fronteras!"
+
+
+    
   
 }
