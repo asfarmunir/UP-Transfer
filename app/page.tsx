@@ -614,7 +614,10 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-      <div className=" w-full max-w-6xl 2xl:max-w-7xl px-5 md:px-0 flex flex-col items-center py-16 2xl:py-20 space-y-20 2xl:space-y-24 ">
+      <div
+        id="features"
+        className=" w-full max-w-6xl 2xl:max-w-7xl px-5 md:px-0 flex flex-col items-center py-16 2xl:py-20 space-y-20 2xl:space-y-24 "
+      >
         <div className="flex items-center flex-col-reverse md:flex-row justify-center gap-8 w-full">
           <Image
             src="/feature1.svg"
@@ -858,10 +861,7 @@ export default function Home() {
             <h3 className="text-3xl mb-3 2xl:text-4xl font-bold text-white">
               UP TRANSFER
             </h3>
-            <p className="text-primary max-w-sm mb-4 ">
-              This is a big one and I consider it one of the most important
-              things for a business.
-            </p>
+            <p className="text-primary max-w-sm mb-4 ">{i18n.t("big")}</p>
             <div className="flex items-center gap-4">
               <Image
                 src="/fb.svg"
@@ -895,26 +895,43 @@ export default function Home() {
           </div>
           <div className=" flex flex-col mr-12">
             <h4 className="text-lg font-semibold text-white mb-4">
-              Quick Links
+              {i18n.t("quick")}
             </h4>
-            <Link href="home" className="text-primary mb-3 font-semibold">
-              Home
-            </Link>
-            <Link href="home" className="text-primary mb-3 font-semibold">
-              Working
-            </Link>
-            <Link href="home" className="text-primary mb-3 font-semibold">
-              Features
-            </Link>
+            <button
+              onClick={() => scrollToSection("home")}
+              className="text-primary text-left mb-3 font-semibold"
+            >
+              {i18n.t("home")}
+            </button>
+            <button
+              onClick={() => scrollToSection("business")}
+              className="text-primary text-left mb-3 font-semibold"
+            >
+              {i18n.t("working")}
+            </button>
+            <button
+              onClick={() => scrollToSection("features")}
+              className="text-primary text-left mb-3 font-semibold"
+            >
+              {i18n.t("features")}
+            </button>
           </div>
           <div className=" flex flex-col">
-            <h4 className="text-lg font-semibold text-white mb-4">Company</h4>
-            <Link href="home" className="text-primary mb-3 font-semibold">
-              About
-            </Link>
-            <Link href="home" className="text-primary mb-3 font-semibold">
-              Contact
-            </Link>
+            <h4 className="text-lg font-semibold text-white mb-4">
+              {i18n.t("company")}
+            </h4>
+            <button
+              onClick={() => scrollToSection("business")}
+              className="text-primary text-left mb-3 font-semibold"
+            >
+              {i18n.t("about")}
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-primary text-left mb-3 font-semibold"
+            >
+              {i18n.t("contact")}
+            </button>
           </div>
         </div>
         <div className="flex items-center justify-between mt-16">

@@ -15,7 +15,6 @@
     "aboutUp":"Sobre Up Transfer",
     "whatIsUp":"Que es Up Transfer?",
     "whatText":"¡Nuestra tecnología financiera hace que las transferencias locales e internacionales sean simples y seguras! Pague a proveedores de todo el mundo, envíe dinero a su propia cuenta bancaria en el extranjero y aproveche las cuentas multidivisas y de criptomonedas.",
-
   "identityVerificationTitle": "Verificación Sin Complicaciones",
   "identityVerificationDescription": "Verifique identidades fácilmente con KYC avanzado, asegurando el cumplimiento y reduciendo el fraude.",
   
@@ -72,7 +71,16 @@
   "transferDescription": "Envía dinero a otros usuarios de forma instantánea y sin complicaciones.",
   "convertTitle": "Convertir",
   "convertDescription": "Convierte divisas sin problemas dentro de la aplicación en segundos.",
-  "bus":"Up Transfer, tu cuenta sin fronteras!"
+  "bus":"Up Transfer, tu cuenta sin fronteras!",
+  "big":"Este es un punto muy importante y lo considero una de las cosas más esenciales para un negocio.",
+   "home":"Inicio",
+  "services":"Servicios",
+  "features":"Características",
+  "working":"Trabajando",
+  "quick":"Enlaces Rápidos",
+  "company":"Compañía"
+
+
 
 
     
